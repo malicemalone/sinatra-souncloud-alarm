@@ -1,2 +1,6 @@
-<h1>Your number is <%=params["phone"]%></h1> 
-<h1>You'll receive your song at <%=params["time"]%></h1>
+<%if @message%>
+	<%= p @message%>
+<%else%>
+	<h1>Your number is <%=@phone%></h1> 
+	<h1>You'll receive your song at <%=@time%></h1>
+<%end%>
